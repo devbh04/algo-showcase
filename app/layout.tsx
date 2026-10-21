@@ -14,12 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "B&B Finance | Bhangale & Bodke Quantitative Systems",
+  title: "B&B Finance",
   description:
-    "B&B Finance (Bhangale and Bodke Finance) — Systematic algorithmic trading models, derivative execution engines, and quantitative research for Indian capital markets.",
+    "B&B Finance — Systematic algorithmic trading models, derivative execution engines, and quantitative research for Indian capital markets.",
   keywords: [
     "B&B Finance",
-    "Bhangale and Bodke Finance",
     "algorithmic trading",
     "quantitative finance",
     "NSE derivative systems",

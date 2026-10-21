@@ -21,8 +21,6 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           {/* Eyebrow badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f4f4f4] border border-[#e2e2e7] text-xs font-medium text-[#191c1f]">
-            <span className="w-2 h-2 rounded-full bg-[#494fdf]" />
-            Bhangale &amp; Bodke Finance • Quantitative Research Lab
           </div>
 
           <div className="space-y-4 max-w-4xl">

@@ -23,9 +23,6 @@ export default function Navbar() {
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#494fdf]" />
               </div>
-              <p className="text-[11px] text-[#505a63] font-normal leading-none hidden sm:block">
-                Bhangale &amp; Bodke
-              </p>
             </div>
           </Link>
 
