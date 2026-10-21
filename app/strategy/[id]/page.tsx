@@ -103,15 +103,14 @@ async function StrategyContent({ params }: StrategyPageProps) {
               GitHub Source Code
             </a>
 
-            <a
-              href={strategy.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="h-11 px-6 rounded-full text-xs font-medium bg-[#191c1f] hover:bg-black text-white transition inline-flex items-center gap-2 whitespace-nowrap shadow-sm"
+            <button
+              disabled
+              className="h-11 px-6 rounded-full text-xs font-medium bg-[#f4f4f4] text-[#8d969e] border border-[#e2e2e7] cursor-not-allowed inline-flex items-center gap-2 whitespace-nowrap shadow-xs"
+              title="servers are down"
             >
-              <span className="w-2 h-2 rounded-full bg-[#00a87e] shrink-0" />
-              Launch Live Client
-            </a>
+              <span className="w-2 h-2 rounded-full bg-[#e23b4a] shrink-0" />
+              servers are down
+            </button>
           </div>
         </div>
       </div>

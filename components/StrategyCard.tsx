@@ -86,15 +86,14 @@ export default function StrategyCard({ strategy }: StrategyCardProps) {
             </svg>
             GitHub Source
           </a>
-          <a
-            href={strategy.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="flex-1 py-2.5 px-4 rounded-full text-xs font-medium text-[#191c1f] bg-[#f4f4f4] hover:bg-[#e8e8ed] border border-[#e2e2e7] transition text-center inline-flex items-center justify-center gap-1.5 shadow-sm"
+          <button
+            disabled
+            className="flex-1 py-2.5 px-4 rounded-full text-xs font-medium text-[#8d969e] bg-[#f4f4f4] border border-[#e2e2e7] cursor-not-allowed text-center inline-flex items-center justify-center gap-1.5"
+            title="servers are down"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00a87e]" />
-            Live Client
-          </a>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#e23b4a]" />
+            servers are down
+          </button>
         </div>
       </div>
     </div>

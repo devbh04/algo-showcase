@@ -117,34 +117,27 @@ export default function LinkModal({ isOpen, onClose }: LinkModalProps) {
                   </a>
                 </div>
 
-                {/* Live Client Box */}
-                <div className="p-4 rounded-[14px] bg-white border border-[#e2e2e7] space-y-2 flex flex-col justify-between">
+                {/* Live Client Box (Disabled - Servers are down) */}
+                <div className="p-4 rounded-[14px] bg-[#f8f9fa] border border-[#e2e2e7] space-y-2 flex flex-col justify-between">
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5 text-xs font-semibold text-[#191c1f]">
-                      <span className="w-2 h-2 rounded-full bg-[#00a87e]" />
+                    <div className="flex items-center gap-1.5 text-xs font-semibold text-[#505a63]">
+                      <span className="w-2 h-2 rounded-full bg-[#e23b4a]" />
                       Live Deployment
                     </div>
-                    <button
-                      onClick={() => copyToClipboard(strat.liveUrl, `live-${strat.id}`)}
-                      className="text-[11px] font-mono text-[#494fdf] hover:underline"
-                    >
-                      {copiedKey === `live-${strat.id}` ? "✓ Copied" : "Copy URL"}
-                    </button>
+                    <span className="text-[10px] font-mono font-medium text-[#e23b4a] bg-[#fef2f2] px-2 py-0.5 rounded-full border border-[#fecaca]">
+                      Offline
+                    </span>
                   </div>
-                  <p className="text-[11px] font-mono text-[#505a63] truncate">
-                    {strat.liveUrl}
+                  <p className="text-xs font-mono font-medium text-[#e23b4a]">
+                    servers are down
                   </p>
-                  <a
-                    href={strat.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-full py-2 px-3 rounded-full text-xs font-medium text-center bg-white hover:bg-[#f4f4f4] text-[#191c1f] border border-[#191c1f] transition inline-flex items-center justify-center gap-1.5 shadow-sm"
+                  <button
+                    disabled
+                    className="w-full py-2 px-3 rounded-full text-xs font-medium text-center bg-[#f4f4f4] text-[#8d969e] border border-[#e2e2e7] cursor-not-allowed inline-flex items-center justify-center gap-1.5"
                   >
-                    Launch Client
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#e23b4a]" />
+                    servers are down
+                  </button>
                 </div>
               </div>
             </div>
